@@ -42,6 +42,14 @@ bundle install --without production
 rails generate controller controller index links about
 ```
 
+## Scaffold with views
+
+For example user views with a model with name and email attributes.
+
+```
+rails generate scaffold User name:string email:string
+```
+
 ## Create branches and merge
 ```
 git checkout -b sass-erb-static # create branch
