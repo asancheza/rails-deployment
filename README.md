@@ -2,7 +2,7 @@
 
 Documentation to create and deploy Rails applications in local and Heroku.
 
-## Create app
+## Create rails app
 ```
 rails new sample_app
 ```
@@ -48,6 +48,7 @@ For example user views with a model with name and email attributes.
 
 ```
 rails generate scaffold User name:string email:string
+bundle exec rake db:migrate
 ```
 
 ## Create branches and merge
@@ -70,5 +71,11 @@ git push heroku master
 
 ## Debug in Heroku
 ```
+heroku logs
 heroku run rails console
+```
+
+## Testing the app
+```
+rails server
 ```
