@@ -1,4 +1,3 @@
-# rails-deployment
 # Rails deployment
 
 Documentation to create and deploy Rails applications in local and Heroku.
