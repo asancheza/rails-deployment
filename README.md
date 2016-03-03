@@ -79,3 +79,26 @@ heroku run rails console
 ```
 rails server
 ```
+
+## Tests 
+
+Add :test in Gemfile.
+
+```
+group :test do
+  gem 'minitest-reporters', '1.0.5'
+  gem 'mini_backtrace',     '0.1.3'
+  gem 'guard-minitest',     '2.3.1'
+end
+```
+
+Install dependencies:
+```
+bundle install --without production
+```
+Write your tests and run:
+```
+bundle exec rake test
+```
+
+
